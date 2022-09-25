@@ -11,6 +11,8 @@
 - [Eslint](https://eslint.org/docs/latest/user-guide/getting-started)
 - [Prettier](https://prettier.io/docs/en/index.html)
 - [Docker](https://www.docker.com/get-started/)
+- [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
+- [Husky](https://typicode.github.io/husky/)
 
 ### Installation
 
