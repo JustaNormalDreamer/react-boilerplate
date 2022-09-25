@@ -1,0 +1,30 @@
+FROM node:14-alpine AS builder
+
+ENV REACT_APP_BACKEND_API_URL='xyz.com'
+
+# Create app directory
+WORKDIR /app
+
+# Install app dependencies
+COPY package*.json ./
+
+RUN npm ci
+
+# Copying rest of the application to app directory
+COPY . /app
+
+RUN npm run build
+
+RUN npm prune --production
+
+FROM nginx:alpine
+
+WORKDIR /usr/share/nginx/html
+
+RUN rm -rf ./*
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+COPY --from=builder /app/build .
+
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
