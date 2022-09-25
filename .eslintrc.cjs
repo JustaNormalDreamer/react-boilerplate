@@ -13,5 +13,6 @@ module.exports = {
     'react'
   ],
   rules: {
+    "prettier/prettier": "warn",
   }
 }
