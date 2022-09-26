@@ -1,6 +1,12 @@
 ## React Boilerplate
 
+---
+
+A React starter boilerplate with integration of popular libraries, structure, and functionalities.
+
 ### Integrated Library
+
+---
 
 - [Typescript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/guide/)
@@ -16,6 +22,8 @@
 
 ### Installation
 
+---
+
 - Clone the repository.
 - Run `yarn` for installing all the dependencies.
 - Run `yarn dev` for running the application in dev mode.
@@ -26,6 +34,8 @@
 - Run `yarn storybook` for running storybook in port 6006.
 
 ### Project Structure
+
+---
 
 - **pages:** consists of all the routing pages.
 - **components:** consists of all the reusable components.
@@ -38,6 +48,8 @@
 - **utils:** consists of utility functions.
 
 ### Configuration & Customization
+
+---
 
 - **env.example:** consists of environment variables, useful for running the application and building it. React uses .env.local file for taking the environment variables. Hence one must fill the required values for the variables.
 - **tailwind.config.cjs:** configure tailwindcss.
