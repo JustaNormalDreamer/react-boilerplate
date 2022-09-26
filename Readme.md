@@ -22,6 +22,8 @@
 - Run `yarn build` for building the application.
 - Run `yarn lint:fix` for running eslint and formatting the entire codebase.
 - Run `yarn format` for running prettier and formatting the entire codebase.
+- Run `yarn test` for runing tests using jest and react testing library.
+- Run `yarn storybook` for running storybook in port 6006.
 
 ### Project Structure
 
