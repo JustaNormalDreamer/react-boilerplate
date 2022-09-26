@@ -11,6 +11,8 @@ const Login = lazy(() => import('@/pages/auth/login'));
 const Register = lazy(() => import('@/pages/auth/register'));
 
 const Home = lazy(() => import('@/pages/index'));
+const ListPost = lazy(() => import('@/pages/posts/index'));
+const ShowPost = lazy(() => import('@/pages/posts/show'));
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             </Route>
             <Route path="/" element={<AuthLayout />}>
               <Route path="/" element={<Home />} />
+              <Route path="/posts" element={<ListPost />} />
+              <Route path="/posts/:postId" element={<ShowPost />} />
             </Route>
           </Routes>
         </BrowserRouter>
