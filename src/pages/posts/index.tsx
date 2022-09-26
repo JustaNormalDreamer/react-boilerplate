@@ -1,4 +1,4 @@
-import { useGetPostsListQuery } from '@/redux/post.reducer';
+import { useGetPostsListQuery } from '@/redux/posts/post.reducer';
 import { Link } from 'react-router-dom';
 
 const ListPost = () => {

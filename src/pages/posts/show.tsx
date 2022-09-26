@@ -1,4 +1,4 @@
-import { useGetPostQuery } from '@/redux/post.reducer';
+import { useGetPostQuery } from '@/redux/posts/post.reducer';
 import { useParams } from 'react-router-dom';
 
 const ShowPost = () => {
