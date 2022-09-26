@@ -1,2 +1,6 @@
 *.cjs
 *.ts
+*.json
+*.js
+
+!/src/**

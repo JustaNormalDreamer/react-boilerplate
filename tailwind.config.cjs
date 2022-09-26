@@ -14,16 +14,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#F5762F',
-        secondary: '#354A5F',
-        ascent: '#5AB1BB',
-        body: '#F8F8F8',
-        danger: '#e63946',
-        darkPrimary: '#0d1b2a',
-        darkSecondary: '#1b263b',
-        sky: colors.sky,
-        cyan: colors.cyan,
-        background: '#f7f9fc'
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        ascent: "var(--ascent)",
       }
     }
   },
